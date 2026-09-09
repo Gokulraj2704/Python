@@ -156,4 +156,85 @@ for i in s:
 print("Digits ", d)
 print("Letters", l)
 print("Special ", sp)
+
+#q18
+a=[50,45,47,80,90]
+lag=a[0]
+small=a[0]
+for i in a:
+    if  i>lag:
+        lag=i
+        
+    if  i<small:
+        small=i
+print(lag)
+print(small)
+
+#q19
+n=int(input("enter the range"))
+a=[]
+c=[]
+for i in range(n):
+    b=int(input("enter the value"))
+    a.append(b)
+    print(a)
+for i in a:
+    if i not in c:
+        c.append(i)
+print (c)
+#20
+a=[10, 20, 30]
+b=[40, 50, 60]
+c=a+b
+print(c)
+
+#21
+a=[]
+for i in range(1, 11):
+    a.append(i ** 3)
+print(a)
+
+#q22
+a=[50, 20, 80, 10, 40]
+a.sort()
+print(a)
+a.sort(reverse="0")
+print(a)
+
+a=[10, 20, 30, 40, 50]
+total = 0
+for i in a:
+    total = total + i
+average = total / len(a)
+print(total)
+print(average)
+
+a=[10, 50, 30, 80, 40]
+a.sort()
+print(a[-2])
+
+a=(10, 20, 30)
+b=(40, 50, 60)
+c=a + b
+print(c)
+
+a=(10, 20, 30, 40, 50)
+print(a[1])
+print(a[3])
+
+a=(10, 20, 30, 40, 50)
+if 30 in a:
+    print("Element in")
+else:
+    print("not")
+
+a=(10, 50, 30, 80, 40)
+print(len(a))
+print(max(a))
+print(min(a))
 '''
+a=(10, 20, 30, 40)
+b=list(a)
+print(b)
+c=tuple(b)
+print(c)
